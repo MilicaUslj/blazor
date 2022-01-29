@@ -650,3 +650,5 @@ C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\releas
 C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
 C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json
 C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
+C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json
+C:\Users\milic\Desktop\blazor\bin\Debug\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
