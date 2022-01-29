@@ -1,0 +1,216 @@
+@page "/convertor" 
+@using blazor.Components
+
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+
+<body >
+  
+    <div class="flex-wrapper">
+        <Topbar></Topbar>
+        <Buttonbar></Buttonbar>
+        <div style="overflow:auto">
+            <div class="orderchange">
+               <Left></Left>
+                <div class="main">
+                    <p>Choose the type off number you would like to convert from the first menu and type to which you would like to convert your number from the second menu. Enjoy!!!</p>
+                    <br>
+                    <table>
+                           
+                            <tr class="tr4">
+                                <td >                        
+                                    <select style="width:280px; font-size:14px;" @bind="Type1" >
+                                        <option selected disabled hidden>Select an Option</option>
+                                        <option>Decimal</option>
+                                        <option>Binary</option>
+                                        <option>Hexadecimal</option>
+                                    </select>
+                                </td >
+                                <td class="td4a td4b">to</td >
+                                <td>
+                                    <select  style="width:280px; font-size:14px;" @bind="Type2">
+                                        <option selected disabled hidden>Select an Option</option>
+                                        <option>Binary</option>
+                                        <option>Decimal</option>
+                                        <option>Hexadecimal</option>
+                                    </select>
+                                </td >
+                            </tr>
+                            <tr class="tr4">
+                                <td style="padding-top: 20px;"><p></p><b>Enter value:</b></td >
+                                <td class="td4"></td >
+                                <td style="padding-top: 20px;" class="td4"><p></p><b>Result:</b></td >
+                            </tr>
+                            <tr class="tr4">
+                                <td><input style="width:280px; border-style:groove; border-color:red; font-size:13px;" @bind="Inputvalue" @bind:event="oninput"></td >
+                                <td class="td4a td4b"><span class="s4">&nbsp&nbsp</span> <button  @onclick="Obracun">Convert &gt&gt</button><span class="s4">&nbsp&nbsp</span></td >
+                                <td><input readonly style="width:280px; font-size:13px" @bind="Result"></td >
+                            </tr>
+                            <tr class="tr4">
+                                <td colspan="3" style="color:red">@z</td >
+                            </tr>
+					    </table>
+                </div>
+                <div class="right">
+                  
+                </div>
+            </div>
+        </div>
+        <Footer></Footer>
+    </div>
+</body>
+
+
+ 
+@code {
+ 
+    String x1,x2;
+    String Inputvalue;
+    private string Result; 
+    private string myVar1, myVar2;
+    private string z="";
+    int CheckD;
+    public string Type1
+    {
+        get { return myVar1; }
+        set
+        {
+            myVar1 = value;
+            Method1();
+        }
+    }
+    private void Method1()
+    {
+       if (myVar1=="Decimal") {x1="D";}
+       else if (myVar1=="Binary") {x1="B";}
+       else if (myVar1=="Hexadecimal") {x1="H";}
+    }
+    public string Type2
+    {
+        get { return myVar2; }
+        set
+        {
+            myVar2 = value;
+            Method2();
+        }
+    }
+    private void Method2()
+    {
+       if (myVar2=="Decimal") {x2="D";}
+       else if (myVar2=="Binary") {x2="B";}
+       else if (myVar2=="Hexadecimal") {x2="H";}
+    }
+
+    static bool isbin(string s)
+    {
+    foreach (var c in s)
+        if (c != '0' && c != '1')
+            return false;
+    return true;
+    }
+    public void Obracun ( )
+    
+    {
+        if ( x1=="D" && x2=="D") {
+            if (int.TryParse(Inputvalue, out CheckD) ){
+                Result=Inputvalue; 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a whole decimal number! Try again!";
+            }
+        }
+        else if ( x1=="D" && x2=="B") {
+            if (int.TryParse(Inputvalue, out CheckD) ){
+                Result=Convert.ToString(int.Parse(Inputvalue), 2); 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a whole decimal number! Try again!";
+            }
+        }
+        else if  ( x1=="D" && x2=="H") {      
+            if (int.TryParse(Inputvalue, out CheckD) ){
+                Result=Convert.ToString(int.Parse(Inputvalue), 16);
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a whole decimal number! Try again!";
+            }
+        }
+        else if  ( x1=="B" && x2=="D") {   
+           if (isbin(Inputvalue))
+            {
+                Result=Convert.ToString(Convert.ToInt32(Inputvalue, 2)); 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a binary number! Try again!";
+            }
+        }
+        else if  ( x1=="B" && x2=="B") {
+            if (isbin(Inputvalue))
+            {
+                Result="TBD"; 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a binary number! Try again!";
+            }
+        }
+        else if ( x1=="B" && x2=="H") {   
+            if (isbin(Inputvalue))
+            {
+                Result=Convert.ToString(Convert.ToInt32(Inputvalue, 2), 16); ; 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a binary number! Try again!";
+            }
+        }
+        else if  ( x1=="H" && x2=="D") {    
+            if (int.TryParse(Inputvalue, NumberStyles.HexNumber, CultureInfo.InvariantCulture,out int dummy)){
+                Result=Convert.ToString(Convert.ToInt32(Inputvalue, 16)); 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a hexadecimal number! Try again!";
+            }
+
+        }
+        else if  ( x1=="H" && x2=="B") {
+            if (int.TryParse(Inputvalue, NumberStyles.HexNumber, CultureInfo.InvariantCulture,out int dummy)){
+                Result=Convert.ToString(Convert.ToInt32(Inputvalue, 16), 2); 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a hexadecimal number! Try again!";
+            }
+
+        }
+        else if ( x1=="H" && x2=="H") {
+            if (int.TryParse(Inputvalue, NumberStyles.HexNumber, CultureInfo.InvariantCulture,out int dummy)){
+                Result=Inputvalue; 
+                z="";    
+            }
+            else{
+                Result="";
+                z="Not a hexadecimal number! Try again!";
+            }
+        }
+      
+    }
+ 
+ 
+}

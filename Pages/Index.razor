@@ -1,0 +1,32 @@
+﻿@page "/"
+@using blazor.Components
+
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+
+<body >
+  
+    <div class="flex-wrapper">
+        <Topbar></Topbar>
+        <Buttonbar></Buttonbar>
+        <div style="overflow:auto">
+            <div class="orderchange">
+                <Left></Left>
+                <div class="main">
+                    <p>A numeral system (or system of numeration) is a writing system for expressing numbers; that is, a mathematical notation for representing numbers of a given set, using digits or other symbols in a consistent manner.</p>
+                    <p>The same sequence of symbols may represent different numbers in different numeral systems. For example, "11" represents the number eleven in the decimal numeral system (used in common life), the number three in the binary numeral system (used in computers).</p>
+                    <p>This website provides short overview of the most commonly used numeral systems, as well as a convertor between different numeral systems.</p>
+                </div>
+                <div class="right">
+                    <a><img src="assets/light-bulb.gif" border="0" alt="its funny" /></a>
+                </div>
+            </div>
+        </div>
+        <Footer></Footer>
+    </div>
+
+
+</body>
