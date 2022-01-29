@@ -646,3 +646,5 @@ C:\Users\milic\Desktop\blazor\obj\Release\net5.0\blazor.pdb
 C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\web.config
 C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\sample-data\weather.json
 C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\_framework\blazor.boot.json
+C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json
+C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
