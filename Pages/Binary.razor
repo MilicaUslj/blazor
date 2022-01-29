@@ -1,0 +1,150 @@
+@page "/binary"
+@using blazor.Components
+
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+
+<body >
+  
+    <div class="flex-wrapper">
+        <Topbar></Topbar>
+        <Buttonbar></Buttonbar>
+        <div style="overflow:auto">
+            <div class="orderchange">
+                <Left></Left>
+                <div class="main">
+                    <p>A binary number is a number expressed in the base-2 numeral system or binary numeral system, a method of mathematical expression which uses only two symbols: typically "0" (zero) and "1" (one).</p>
+					<p><span style="color:green;"><b>Binary counting</b></span></p>
+					<p>Binary counting follows the same procedure as decimal counting, except that only the two symbols 0 and 1 are available. Thus, after a digit reaches 1 in binary, an increment resets it to 0 but also causes an increment of the next digit to the left. Overview of binar numebrs representing numbers 0-12 in decimal system is presented in table below.</p>
+					<table class="t1" style="margin-left:auto;margin-right:auto;">
+						<tr class="t1">
+							<td class="t1 tableheader" ><b>Decimal numebrs</b></td >
+							<td class="t1 tableheader" >&nbsp&nbsp&nbsp<b>Binary numbers</b></td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">0</td >
+							<td class="t1">0</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">1</td >
+							<td class="t1">1</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">2</td >
+							<td class="t1">10</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">3</td >
+							<td class="t1">11</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">4</td >
+							<td class="t1">100</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">5</td >
+							<td class="t1">101</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">6</td >
+							<td class="t1">110</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">7</td >
+							<td class="t1">111</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">8</td >
+							<td class="t1">1000</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">9</td >
+							<td class="t1">1001</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">10</td >
+							<td class="t1">1010</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">11</td >
+							<td class="t1">1011</td >
+						</tr>
+						<tr class="t1">
+							<td class="t1">12</td >
+							<td class="t1">1100</td >
+						</tr>
+					</table>
+					<p></p>
+					<p><span style="color:green;"><b>Binary to decimal conversion</b></span></p>
+					<p>For binary number with n digits:</p>
+					<p>d<sub>n-1</sub>... d<sub>3&nbsp</sub>d<sub>2&nbsp</sub>d<sub>1&nbsp</sub>d<sub>0&nbsp</sub></p>
+					<p>The decimal number is equal to the sum of binary digits (dn) times their power of 2 (2<sup>n</sup>):</p>
+					<p>decimal = d<sub>0</sub>x2<sup>0</sup> + d<sub>1</sub>x2<sup>1</sup> + d<sub>2</sub>x2<sup>2</sup> + ...</p>
+					<p><b>Example</b></p>
+					<table class="table2" style="margin-left:auto;margin-right:auto;">
+						<tr>
+							<td class="table2 tableheader" style="text-align:left;padding-top:5px; padding-bottom:5px;"><b>binary number:&nbsp&nbsp</b></td >
+							<td class="table2">1</td >
+							<td class="table2">0</td >
+							<td class="table2">0</td >
+							<td class="table2">1</td >
+						</tr>
+						<tr>
+							<td class="table2 tableheader" style="text-align:left; padding-top:5px; padding-bottom:5px;"><b>power of 2:&nbsp&nbsp</b></td >
+							<td class="table2">2<sup>3</sup></td >
+							<td class="table2">2<sup>2</sup></td >
+							<td class="table2">2<sup>1</sup></td >
+							<td class="table2">2<sup>0</sup></td >
+						</tr>
+					</table>
+					<p></p>
+					<p><span style="color:green;"><b>Decimal to binary conversion</b></span></p>
+					<p>Conversion steps:</p>
+					<ul>
+						<li>Divide the number by 2.</li>
+						<li>Get the integer quotient for the next iteration.</li>
+						<li>Get the remainder for the binary digit.</li>
+						<li>Repeat the steps until the quotient is equal to 0.</li>
+					</ul>
+					<p>Convert 13 to binary:</p>
+					<table style="margin-left:auto;margin-right:auto; ">
+						<tr>
+							<td class="td3 tableheader"><b>Division by 2</b></td >
+							<td class="td3 tableheader"><b>Quotient</b></td >
+							<td class="td3 tableheader"><b>Remainder</b></td >
+						</tr>
+						<tr>
+							<td class="td3">13/2</td>
+							<td class="td3">6</td>
+							<td class="td3" style="background-color:#FFF5EE">1</td>
+						</tr>
+						<tr>
+							<td class="td3">6/2</td>
+							<td class="td3">3</td>
+							<td class="td3" style="background-color:#FFF5EE">0</td>
+						</tr>
+						<tr>
+							<td class="td3">3/2</td>
+							<td class="td3">1</td>
+							<td class="td3" style="background-color:#FFF5EE">1</td>
+						</tr>
+						<tr>
+							<td class="td3">1/2</td>
+							<td class="td3">0</td>
+							<td class="td3" style="background-color:#FFF5EE">1</td>
+						</tr>
+					</table>
+					<p></p>
+					<p>So 13 as a decimal numebrs equals 1101 as a binary number.</p>
+				</div>
+				<div class="right">
+					
+				</div>
+			</div>
+		</div>
+		<Footer></Footer>
+	</div>
+</body>

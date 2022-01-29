@@ -1,0 +1,31 @@
+@page "/hexadecimal"
+@using blazor.Components
+
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+<body >
+  
+    <div class="flex-wrapper">
+         <Topbar></Topbar>
+        <Buttonbar></Buttonbar>
+        <div style="overflow:auto">
+            <div class="orderchange">
+                <Left></Left>
+                <div class="main">
+                    <p>The hexadecimal numeral system, often shortened to "hex", is a numeral system made up of 16 symbols (base 16). Hexadecimal uses the decimal numbers and six extra symbols. There are no numerical symbols that represent values greater than nine, so letters taken from the English alphabet are used, specifically A, B, C, D, E and F. Hexadecimal A = decimal 10, and hexadecimal F = decimal 15.</p>
+                    <p>Humans mostly use the decimal (base 10) system where each digit can have one of ten values between zero and ten. This is probably because humans have ten fingers on their hands. Computers generally represent numbers in binary (base 2). In binary, each "binary digit" is called a bit and can only have one of two values: one or zero. Since a single bit's two possible values represents one fifth the information potentially conveyed by of decimal digit's ten possible values, binary representations of integer values can require many more (binary) bits than decimal digits.</p>
+                    <p>Computer memory is organized as an array of strings of bits called bytes. On modern computers, each byte generally contains eight bits, which can be conveniently be represented as two hexadecimal digits. Engineers and computer scientists frequently refer to each of these four-bit values as a nibble (sometimes spelled nybble, see computer jargon).</p>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+        </div>
+        <Footer></Footer>
+    </div>
+
+
+</body>

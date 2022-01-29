@@ -1,0 +1,35 @@
+@page "/commontypes"
+@using blazor.Components
+
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+<body >
+  
+    <div class="flex-wrapper">
+        <Topbar></Topbar>
+        <Buttonbar></Buttonbar>
+        <div style="overflow:auto">
+            <div class="orderchange">
+                <Left></Left>
+                <div class="main">
+                    <p>The most commonly used numeral systems include:</p>
+		<ul>
+			<li><span style="color:green;"><b>Decimal numeral system</b></span> -  uses 10 symbols to construct numbers (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)... <a class="learnmore" href="decimal">learn more</a> </li>
+			<li><span style="color:green;"><b>Binary system</b></span> - uses two symbols to construct numerals (0, 1)...<a class="learnmore" href="binary">learn more</a></li>
+			<li><span style="color:green;"><b>Hexadecimal system</b></span> - uses 16 symbols to construct numerals (0, 1, 2,…, 9, A, B,…, F)...<a class="learnmore" href="hexadecimal">learn more</a> </li>
+		</ul>
+                </div>
+                <div class="right">
+                    
+                </div>
+            </div>
+        </div>
+        <Footer></Footer>
+    </div>
+
+
+</body>
