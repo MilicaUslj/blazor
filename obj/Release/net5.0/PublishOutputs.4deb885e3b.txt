@@ -19,6 +19,9 @@ C:\Users\milic\Desktop\blazor\release\wwwroot\css\style.css
 C:\Users\milic\Desktop\blazor\release\wwwroot\favicon.ico
 C:\Users\milic\Desktop\blazor\release\wwwroot\index.html
 C:\Users\milic\Desktop\blazor\release\wwwroot\sample-data\weather.json
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\web.config
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.wasm
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\icudt.dat
@@ -88,6 +91,9 @@ C:\Users\milic\Desktop\blazor\release\wwwroot\css\style.css.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\favicon.ico.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\index.html.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\sample-data\weather.json.br
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\web.config.br
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json.br
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.timezones.blat.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.wasm.br
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\icudt.dat.br
@@ -156,6 +162,9 @@ C:\Users\milic\Desktop\blazor\release\wwwroot\css\style.css.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\favicon.ico.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\index.html.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\sample-data\weather.json.gz
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\web.config.gz
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\sample-data\weather.json.gz
+C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\release\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.timezones.blat.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\dotnet.wasm.gz
 C:\Users\milic\Desktop\blazor\release\wwwroot\_framework\icudt.dat.gz

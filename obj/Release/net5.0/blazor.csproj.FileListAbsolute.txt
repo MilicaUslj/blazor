@@ -643,3 +643,6 @@ C:\Users\milic\Desktop\blazor\obj\Release\net5.0\blazor.csproj.CopyComplete
 C:\Users\milic\Desktop\blazor\obj\Release\net5.0\blazor.dll
 C:\Users\milic\Desktop\blazor\obj\Release\net5.0\ref\blazor.dll
 C:\Users\milic\Desktop\blazor\obj\Release\net5.0\blazor.pdb
+C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\web.config
+C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\sample-data\weather.json
+C:\Users\milic\Desktop\blazor\bin\Release\net5.0\release\wwwroot\_framework\blazor.boot.json
