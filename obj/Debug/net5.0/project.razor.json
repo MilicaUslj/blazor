@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": -688445548,
-        "Kind": "Components.Component",
-        "Name": "blazor.Components.Buttonbar",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Buttonbar"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Components.Buttonbar"
-        }
-      },
-      {
-        "HashCode": 1179168968,
-        "Kind": "Components.Component",
-        "Name": "blazor.Components.Buttonbar",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazor.Components.Buttonbar"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Components.Buttonbar",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1173502399,
         "Kind": "Components.Component",
         "Name": "blazor.Components.Footer",
@@ -169,6 +136,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazor.Components.Topbar",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -688445548,
+        "Kind": "Components.Component",
+        "Name": "blazor.Components.Buttonbar",
+        "AssemblyName": "blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Buttonbar"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazor.Components.Buttonbar"
+        }
+      },
+      {
+        "HashCode": 1179168968,
+        "Kind": "Components.Component",
+        "Name": "blazor.Components.Buttonbar",
+        "AssemblyName": "blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazor.Components.Buttonbar"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazor.Components.Buttonbar",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
